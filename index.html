@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="code.js"></script>
+    <title>Otae san detector</title>
+  </head>
+  <body>
+    <br><br>
+    <div class="jumbotron">
+      <h1>Otae san detector</h1>
+
+      <p>
+          <a href="https://gintama.fandom.com/wiki/Shimura_Tae">Shimura Tae</a> (志村 妙 Shimura Tae), or just Otae (お妙) (the "お" (O) is
+          an honorific used to refer to women),
+          is the older sister of Shimura Shinpachi. She works at Snack Smile as a
+          cabaret hostess to keep the family doujo Koudoukan going.
+          This is a deep learning model created to detect Otae san. I've heavily used the
+          fast.ai library and learned to make this in lesson 1 of <a href="http://course.fast.ai/">fast.ai deep learning 1 course.</a><br>
+      
+          <br><br>
+          <b>Architecture</b>: resnet34 <br>
+          <b>Training data</b>: I collected by taking screenshots while watching the anime <a href="https://myanimelist.net/anime/918/Gintama">Gintama</a>
+          There were total 1600 images with 700 of them marked as "otae" for the training. <br>
+          <b>Request sent by</b>: jquery and ajax <br>
+          <b>Backend</b>: Flask
+        </p>
+      <!-- <label class="btn btn-primary" for="my-file-selector">
+        <input id="upload-file" type="file" style="display:none"
+        onchange="$('#upload-file-info').html(this.files[0].name)">
+        Choose image
+      </label>
+      <span class='label label-info' id="upload-file-info"></span>
+      <input id="upload-file-btn" type="submit" value="Submit" class="btn btn-info" name="submit"> -->
+      <form id="upload-file" method="post">
+      <fieldset>
+          <label for="file">Select a file</label>
+          <input name="file" type="file">
+      </fieldset>
+      <fieldset>
+          <button id="upload-file-btn" type="button">Upload</button>
+      </fieldset>
+  </form>
+    </div>
+
+
+
+  </body>
+</html>
