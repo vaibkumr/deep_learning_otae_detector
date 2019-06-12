@@ -1,5 +1,5 @@
 # Shimura tae detector
-![](https://myanimelist.cdn-dena.com/images/characters/14/115884.jpg)
+![](https://i.imgur.com/dDI99en.jpg)
 
 See working video here: https://youtu.be/rAOk7tWDC_w
 
